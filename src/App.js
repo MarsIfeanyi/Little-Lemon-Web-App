@@ -1,18 +1,21 @@
-import { Fragment } from "react/cjs/react.production.min";
+import React, { Fragment } from "react";
+
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
 import "./App.css";
 
 function App() {
   return (
-    <Fragment className="App">
-      <h1>HomePage</h1>
+    <Fragment>
+      <div className="App">
+        <Header />
 
-      <header>
-        <nav></nav>
-      </header>
+        <Main></Main>
 
-      <main></main>
-
-      <footer></footer>
+        <Footer />
+      </div>
     </Fragment>
   );
 }
