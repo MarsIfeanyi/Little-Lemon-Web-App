@@ -4,12 +4,12 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 
-import "./App.css";
+// import "./App.css";
 
 function App() {
   return (
     <Fragment>
-      <div className="App">
+      <div className=" m-6 p-6">
         <Header />
 
         <Main></Main>
