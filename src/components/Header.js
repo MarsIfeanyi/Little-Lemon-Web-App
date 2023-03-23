@@ -5,9 +5,9 @@ import { littleLogo } from "../assets";
 const Header = () => {
   return (
     <Fragment>
-      <div>
+      <div className="flex flex-col md:flex-row justify-between">
         <header>
-          <img src={littleLogo} alt="littleLemonLogo" />
+          <img src={littleLogo} alt="littleLemonLogo" className="w-52" />
         </header>
 
         <Nav />
