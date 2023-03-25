@@ -1,8 +1,18 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import BookingForm from "./BookingForm";
 
 import { Greeksalad, Bruchetta, Noodles } from "../assets";
 
-const Main = () => {
+const Main = (props) => {
+  const [availableTimes, setAvailableTimes] = useState([
+    "17:00",
+    "18:00",
+    "19:00",
+    "20:00",
+    "21:00",
+    "22:00",
+  ]);
+
   const menuCart = [
     {
       id: 1,
@@ -65,6 +75,11 @@ const Main = () => {
           ))}
         </div>
       </div>
+
+      {/* <BookingForm
+        availableTimes={availableTimes}
+        setAvailableTimes={setAvailableTimes}
+      /> */}
     </Fragment>
   );
 };
