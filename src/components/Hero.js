@@ -1,5 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { HeroImage } from "../assets";
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
             reservation for all your special events.
           </p>
           <button className="rounded-2xl bg-pri02 ml-10 mt-6 px-4 py-2 text-xl">
-            Reserve a Table
+            <Link to="/booking"> Reserve a Table</Link>
           </button>
         </div>
 
