@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 import HomePage from "./page/HomePage";
 import BookingPage from "./page/BookingPage";
+import { ConfirmBookingPage } from "./page/ConfirmBookingPage";
 function App() {
   return (
     <Fragment>
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/booking" element={<BookingPage />} />
+          <Route path="/confirm-booking" element={<ConfirmBookingPage />} />
         </Routes>
 
         <Footer />
