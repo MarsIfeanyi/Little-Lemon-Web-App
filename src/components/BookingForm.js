@@ -18,7 +18,7 @@ const BookingForm = () => {
     setDate(e.target.value);
   };
 
-  const setTimeHandler = (e) => {
+  const setAvailableTimesHandler = (e) => {
     setTime(e.target.value);
   };
   const setNumberHandler = (e) => {
@@ -40,7 +40,7 @@ const BookingForm = () => {
 
   return (
     <form onSubmit={formSubmitHandler} className="mt-44">
-      <div className="flex flex-col w-1/3 justify-center mx-auto ">
+      <div className="flex flex-col w-96 md:w-1/3 justify-center mx-auto ">
         {/* Date container */}
         <div className="space-y-2 flex flex-col">
           <label htmlFor="res-date">Choose date *</label>
@@ -61,7 +61,7 @@ const BookingForm = () => {
             name="res-time"
             id="res-time"
             value={time}
-            onChange={setTimeHandler}
+            onChange={setAvailableTimesHandler}
             required
           >
             <option value="">Select time *</option>
@@ -109,7 +109,7 @@ const BookingForm = () => {
         <button
           type="submit"
           disabled={!date && !time && !number && !occasion}
-          className="bg-pri02 py-2 mt-8 rounded-2xl "
+          className="bg-pri02 py-2 mt-8 rounded-2xl mb-20 "
         >
           Make Your Reservation
         </button>
