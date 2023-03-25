@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <Fragment>
       <nav>
-        <ul className="flex  flex-col md:flex-row space-x-0 md:space-x-6 space-y-2 md:space-y-0 mr-20 text-xl ">
+        <ul className="flex  flex-col md:flex-row space-x-0 md:space-x-6 space-y-2 md:space-y-0 mr-20 text-xl ml-16 md:ml-0 ">
           {/* <li>
             {" "}
             <a href="/">Home</a>{" "}
